@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellCodeRunner", "ShellCodeRunner\ShellCodeRunner.csproj", "{634874B7-BF85-400C-82F0-7F3B4659549A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORKryptor", "XORKryptor\XORKryptor.csproj", "{2F9C3053-077F-45F2-B207-87C3C7B8F054}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{634874B7-BF85-400C-82F0-7F3B4659549A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634874B7-BF85-400C-82F0-7F3B4659549A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634874B7-BF85-400C-82F0-7F3B4659549A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634874B7-BF85-400C-82F0-7F3B4659549A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9C3053-077F-45F2-B207-87C3C7B8F054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9C3053-077F-45F2-B207-87C3C7B8F054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9C3053-077F-45F2-B207-87C3C7B8F054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9C3053-077F-45F2-B207-87C3C7B8F054}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1619F7A3-ECAF-4CF0-85DC-9C5771ED6E8E}
+	EndGlobalSection
+EndGlobal

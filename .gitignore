@@ -9,7 +9,7 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-encrypted.bin
+Resources/encrypted.bin
 
 # Build results
 [Dd]ebug/

@@ -7,4 +7,5 @@ This code is an example for running shell code on a Windows system via .NET asse
 ##### 2. ShellCodeRunner
 - Example code inteded for running XOR encrypted Cobal Strike payloads.  It contains a XOR decryptor which decrypts the payload before running.
 ## Special Thanks
-This example code was made entirely possible by @djhohnstein
+This example code was made entirely possible by @djhohnstein<br />
+He is a MOUNTAIN of knowledge and I learned a LOT!

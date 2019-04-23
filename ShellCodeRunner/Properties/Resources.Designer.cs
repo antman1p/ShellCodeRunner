@@ -59,15 +59,5 @@ namespace ShellCodeRunner.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] encrypt {
-            get {
-                object obj = ResourceManager.GetObject("encrypt", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

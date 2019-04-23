@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Resources\encrypt.bin" />
+    <EmbeddedResource Include="Resources\encrypt.bin" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

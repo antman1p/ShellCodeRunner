@@ -11,7 +11,8 @@
  * Held by the hand/taught/mentored/instructed and written by Dwight Hohnstein
  * Twitter: @djhohnstein
  * 
- * References: http://pinvoke.net/default.aspx/kernel32/VirtualAllocEx.html
+ * References: 
+ * http://pinvoke.net/default.aspx/kernel32/VirtualAllocEx.html
  * http://pinvoke.net/default.aspx/kernel32/VirtualProtectEx.html
  * http://pinvoke.net/default.aspx/kernel32/CreateThread.html
  * https://docs.microsoft.com/en-us/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc
@@ -20,6 +21,7 @@
  * https://docs.microsoft.com/en-us/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject
  * https://docs.microsoft.com/en-us/windows/desktop/memory/memory-protection-constants
  * https://msdn.microsoft.com/en-us/library/windows/desktop/aa379560(v=vs.85).aspx
+ * https://www.endgame.com/blog/technical-blog/hunting-memory
  * https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
  * 
  */
@@ -36,7 +38,11 @@ namespace ShellCodeRunner
             //Decryption Key.  Ensure it is the same as your Encryption key
             char[] key = { 'p', 'a', 's', 's', 'k', 'e', 'y' };
 
-            // Get the encrypted payload from the embedded resource
+            /* Get the encrypted payload from the embedded resource
+             * You'll need to add the XOR encrypted payload (encrypt.bin) 
+             * to Visual Studio as an embedded resource
+             * https://stackoverflow.com/questions/39367349/code-or-command-to-use-embedded-resource-in-visual-studio
+             */
             byte[] encBytes = ShellCodeRunner.Properties.Resources.encrypt;
 
             // New byte array to hold decrypet payload bytes

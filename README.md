@@ -10,7 +10,7 @@ payload before running.
 - Where traditional ShellCode Injection typically opens an already running process and uses CreateRemoteThread, the method in this example
 instead, uses CreateThread to create a new thread within the ShellCodeRunner process itself.<br/>
 The ShellCodeRunner uses the following steps: 
-  1. Allocate a chunk of memory in the process (VirtualAlloc) with RW memory protection
+  1. Allocate a chunk of memory in the calling process (VirtualAlloc) with RW memory protection
   2. Copy the shellcode payload to the newly allocated section (Marshal.Copy)
   3. Change memory protection to RX (VirtualProtect)
   4. Create a new thread in the remote process to execute the shellcode (CreateThread).

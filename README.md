@@ -13,7 +13,7 @@ The ShellCodeRunner executes the following steps:
   1. Allocate a chunk of memory in the calling process (VirtualAlloc) with RW memory protection
   2. Copy the shellcode payload to the newly allocated section (Marshal.Copy)
   3. Change memory protection to RX (VirtualProtect)
-  4. Create a new thread in the remote process to execute the shellcode (CreateThread).
+  4. Create a new thread in the calling process to execute the shellcode (CreateThread).
   5. Wait for beacon to call to exit (WaitForSingleObject)
 ## Special Thanks
 This example code was made entirely possible by @djhohnstein<br/>
